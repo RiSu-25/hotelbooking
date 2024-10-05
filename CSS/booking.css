@@ -1,0 +1,134 @@
+/* Google font Link */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fea116;
+    --white: #ffffff;
+    --dark: #0F172B;
+    --icon-color: #ae9548;
+    --main-color: #0b0b8ddc;
+    --header-font: "Playfair Display", serif;
+    --style-font: "Pacifico", cursive;
+}
+
+body{
+    font-family: "Roboto Slab", serif;
+}
+
+
+/*------Navbar------*/
+.navbar{
+    background-color: rgba(189, 238, 246, 0.996);
+  }
+.navbar-brand{
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: var(--style-font);
+    margin-left: 22px;
+}
+.collapse{
+    padding: 10px;
+    justify-content: end;
+}
+.nav-item .nav-link.active{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-item .nav-link.active:hover{
+    color: var(--primary);
+}
+
+/*----Contact Header----*/
+.banner{
+  background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../Images/Rooms/banner.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.head-text{
+  font-size: 50px;
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+/*-----Booking Section-----*/
+.card{
+    height: 550px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.book-head{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.input-group-text i{
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.btn-btn{
+    margin-top: 25px;
+    margin-left: 45%;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 25px;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.modal-title{
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.fname, .lname{
+  display: inline-flex;
+}
+.lname{
+  margin-left: 55px;
+}
+
+/*-----Footer------*/
+.copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 2px solid rgba(256, 256, 256, 0.1);
+  }
+  
+  .copyright a {
+    color: #fea116;
+    text-decoration: none;
+  }
+  
+  .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    color: white;
+  }
+  
+  .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+  }
+  

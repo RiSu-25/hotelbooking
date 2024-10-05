@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Villa - A Best Way To Book Online</title>
+    <link rel="icon" href="./Images/favicon.png" type="image/x-icon">
+
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!--Font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+</head>
+<body>
+    <!--Navbar Section-->
+    <section>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-hotel"></i>Royal Villa 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./room.html">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--Banner Section-->
+    <section class="Banner" id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/ban2.avif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="width: 700px;">
+                            <h5 class="section-title mb-3 text-uppercase">Welcome To 5 <i class="fa-solid fa-star"></i> Luxury Living</h5>
+                            <h1 class="text display-3 mb-4">A Best Place To Stay</h1>
+                            <a href="./room.html" class="btn-main btn-primary py-md-3 px-md-5">Book A Room</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+    </section>
+
+    <!--Booking Section-->
+    <section class="Booking">
+        <div class="container-fluid booking pb-5">
+            <div class="container">
+                <div class="bg-white shadow" style="padding: 35px;">
+                    <form id="rateForm">
+                        <div class="row g-2">
+                            <div class="col-md-12">
+                                <div class="row g-3">
+                                    <div class="col-md-3">
+                                        <div class="date" id="checkIn" data-target-input="nearest">
+                                            <label for="checkIn">Check In</label>
+                                            <input type="date" id="checkin" name="checkin" class="form-control datetimepicker-input" data-target="#date1" data-toggle="datetimepicker" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="date" id="checkOut1" data-target-input="nearest">
+                                            <label for="checkOut">Check Out</label>
+                                            <input type="date" id="checkout" name="checkout" class="form-control datetimepicker-input" data-target="#date2" data-toggle="datetimepicker"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="roomtype">Room Type</label>
+                                        <select class="form-select" id="roomType" name="roomType">
+                                            <option selected>Select</option>
+                                            <option value="single">Standard</option>
+                                            <option value="double">Delux</option>
+                                            <option value="suite">Royal Suite</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="./room.html"><button class="btn-main p-lg-1 w-100" type="submit">Check Rates</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="result" class="result" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Us Section-->
+    <section class="About" id="about">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
+                        <h1 class="title mb-4">Welcome to <span class="text-uppercase">Royal Villa</span></h1>
+                        <p class="para mb-4">
+                            <b><i>Our ethos and purpose is simple: to provide luxury stay in its finest form.</i></b><br>
+                            Staying at an Luxury Hotel is an experience that lives long in the memory. 
+                            Service that is thoughtful and discreet; food that attains culinary perfection yet is delivered in a relaxed, 
+                            comfortable environment; rooms that project opulence but make you instantly feel at home.
+                        </p>
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="icons fa-solid fa-hotel fa-2x mb-2"></i>
+                                        <h2 class="num-text mb-1" data-toggle="counter-up">4050</h2>
+                                        <p class="name-text mb-0">Rooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="icons fa-solid fa-users-gear fa-2x mb-2"></i>
+                                        <h2 class="num-text mb-1" data-toggle="counter-up">820</h2>
+                                        <p class="name-text mb-0">Staffs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="icons fa-solid fa-users fa-2x mb-2"></i>
+                                        <h2 class="num-text mb-1" data-toggle="counter-up">2100</h2>
+                                        <p class="name-text mb-0">Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn-main btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75" src="./Images/about-1.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100" src="./Images/about-2.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-50" src="./Images/about-3.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75" src="./Images/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Room Section-->
+    <section class="Rooms" id="rooms">
+        <div class="container-xxl py-5 mt-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
+                    <h1 class="title mb-5">Explore Our <span class="text-uppercase">Rooms</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card">
+                            <img src="./Images/Rooms/standard room.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Standard Room</h5>
+                              <p class="card-text">&#8377;8500/ per night</p>
+                              <a href="./room.html" class="btn-btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="card">
+                            <img src="./Images/Rooms/delux.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Delux Room</h5>
+                              <p class="card-text">&#8377;12500 / per night</p>
+                              <a href="./room.html" class="btn-btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="card">
+                            <img src="./Images/Rooms/royal suite.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Royal Suite</h5>
+                              <p class="card-text">&#8377;18500 / per night</p>
+                              <a href="./room.html" class="btn-btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Service Section-->
+    <section class="Service" id="service">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
+                    <h1 class="title mb-5">Explore Our <span class="text-uppercase">Services</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-hotel fa-2x"></i>
+                                </div>
+                            </div>
+                            <h5 class="heading mb-3">Rooms & Appartment</h5>
+                            <p class="text-body mb-0">Welcome to your new sanctuary—modern comforts meet timeless style. <br>Experience luxury living with our high-end finishes and exceptional amenities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-utensils fa-2x"></i>
+                                </div>
+                            </div>
+                            <h5 class="heading mb-3">Food & Restaurant</h5>
+                            <p class="text-body mb-0">A place where every meal is a masterpiece <br> Enjoy different types of meals with different taste.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-spa fa-2x"></i>
+                                </div>
+                            </div>
+                            <h5 class="heading mb-3">Spa & Fitness</h5>
+                            <p class="text-body mb-0">Refresh your mind, renew your body. <br> Fitness is not about being better than someone else; it’s about being better than you used to be.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-person-swimming fa-2x"></i>
+                                </div>
+                            </div>
+                            <h5 class="heading mb-3">Sports & Gaming</h5>
+                            <p class="text-body mb-0">In sports and gaming, every challenge is an opportunity to grow. <br> Enjoy your everyday by playing any game or sports.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-champagne-glasses fa-2x"></i>
+                                </div>
+                            </div>
+                            <h5 class="heading mb-3">Event & Party</h5>
+                            <p class="text-body mb-0">The best parties are the ones where everyone feels like family. <br> Here you can enjoy any parties or events</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-dumbbell fa-2x"></i>
+                                </div>
+                            </div>
+                            <h5 class="heading mb-3">Gym & Yoga</h5>
+                            <p class="text-body mb-0">Stay fit while away from home at ournfitness centre, complimentary for in-house guests, and equipped with the latest in cardio and strength machines, resistance bands, balls and stretching mats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Testimonials Section--->
+    <section class="Testimonials" id="test">
+        <div class="container-xxl testimonial my-5 py-5 bg-dark">
+            <div class="container">
+                <div class="owl-carousel testimonial-carousel py-5">
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <i class="icon-test fa-solid fa-quote-left fa-2x position-absolute top-0 start-0 ms-3"></i>
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="./Images/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="icon-test fa-solid fa-quote-right fa-2x position-absolute end-0 bottom-0 me-4"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <i class="icon-test fa-solid fa-quote-left fa-2x position-absolute top-0 start-0 ms-3"></i>
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="./Images/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="icon-test fa-solid fa-quote-right fa-2x position-absolute end-0 bottom-0 me-4"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <i class="icon-test fa-solid fa-quote-left fa-2x position-absolute top-0 start-0 ms-3"></i>
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="./Images/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="icon-test fa-solid fa-quote-right fa-2x position-absolute end-0 bottom-0 me-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Newsletter Section-->
+    <section class="Newsletter">
+        <div class="container newsletter mb-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 border rounded p-1">
+                    <div class="border rounded text-center p-1">
+                        <div class="bg-white rounded text-center p-5">
+                            <h4 class="title mb-4">Subscribe Our <span class="text-uppercase">Newsletter</span></h4>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Footer Section-->
+    <section class="Footer">
+        <div class="container-fluid bg-dark text-light footer">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="head rounded p-4">
+                            <a class="name-head" href="index.html">Royal Villa</a>
+                            <hr class="mt-4">
+                            <p class="para">Royal Villa is designed to be a heaven for the senses and an oasis of luxury.
+                                Explore & make memobarable stay, events, parties, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Lonavla, Mumbai</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 98745 63210</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>royalvilla@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn-icons" href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a class="btn-icons" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="btn-icons" href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a class="btn-icons" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                                <a class="btn-links" href="#about">About Us</a>
+                                <a class="btn-links" href="./contact.html">Contact Us</a>
+                                <a class="btn-links" href="#">Privacy Policy</a>
+                                <a class="btn-links" href="#">Terms & Condition</a>
+                                <a class="btn-links" href="#">Support</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                                <a class="btn-links" href="#">Food & Restaurant</a>
+                                <a class="btn-links" href="#">Spa & Fitness</a>
+                                <a class="btn-links" href="#">Sports & Gaming</a>
+                                <a class="btn-links" href="#">Event & Party</a>
+                                <a class="btn-links" href="#">Gym & Yoga</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; 2024 <a class="heading" href="#">Royal Villa </a>, All Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--JS Link-->
+    <script src="./JS/script.js"></script>
+</body>
+</html>

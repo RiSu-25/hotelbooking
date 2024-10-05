@@ -1,0 +1,369 @@
+/* Google font Link */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fea116;
+    --white: #ffffff;
+    --dark: #0F172B;
+    --main-color: #0b0b8ddc;
+    --header-font: "Playfair Display", serif;
+    --style-font: "Pacifico", cursive;
+}
+
+body{
+    font-family: "Roboto Slab", serif;
+}
+/*-----For all section tile we use this------
+--------Section Title Code-------*/
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+/*------Navbar------*/
+.navbar{
+    background-color: rgba(189, 238, 246, 0.996);
+  }
+.navbar-brand{
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: var(--style-font);
+    margin-left: 22px;
+}
+.collapse{
+    padding: 10px;
+    justify-content: end;
+}
+.nav-item .nav-link.active{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-item .nav-link.active:hover{
+    color: var(--primary);
+}
+
+/*-----Banner Section------*/
+.carousel-caption{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 43, .7);
+    z-index: 1;
+}
+.carousel-item img{
+    height: 780px;
+}
+
+.section-title i{
+    color: var(--primary);
+    font-size: 12px;
+}
+.text{
+    font-size: 55px;
+    font-weight: 600;
+    font-family: var(--header-font);
+}
+
+/*-----All Button CSS-------*/
+.btn-main{
+    background-color: var(--primary);
+    border: none;
+    margin-top: 23px;
+    border-radius: 20px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.btn-main:hover{
+    background-color: var(--main-color);
+}
+
+
+/*-----Booking Section------*/
+.booking {
+    position: relative;
+    margin-top: -70px;
+    z-index: 1;
+}
+.bg-white{
+    border-radius: 20px;
+}
+
+label{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/*-----About Section------*/
+
+/*---tile span is used for all heading---*/
+.title span{
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: var(--header-font);
+}
+.para b i{
+    color: var(--main-color);
+    font-size: 20px;
+}
+.icons{
+    color: var(--main-color);
+}
+.num-text{
+    color: var(--primary);
+    font-weight: 600;
+}
+.name-text{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+/*-----Room Section-----*/
+.card{
+    width: 350px;
+    height: 420px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card img{
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.card-title{
+    color: var(--main-color);
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+}
+.card-text{
+    color: var(--primary);
+    text-align: center;
+    font-weight: 550;
+}
+
+.btn-btn{
+    background-color: var(--primary);
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+/*-----Service Section------*/
+.service-item {
+    height: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: var(--primary);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 30px auto;
+    width: 65px;
+    height: 65px;
+    transition: .5s;
+}
+
+.service-item i,
+.service-item h5,
+.service-item p {
+    transition: .5s;
+}
+
+.service-item:hover h5{
+    color: var(--white);
+}
+
+.heading{
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.text-body{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/*---------Testimonial Section------*/
+.testimonial {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../Images/testimonial.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.owl-carousel{
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial-carousel {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.testimonial-carousel .testimonial-item {
+    padding: 30px;
+}
+
+.icon-test {
+    color: var(--primary);
+}
+
+/*-------Subscribe Section-----*/
+.newsletter {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+/*------Footer Section------*/
+.head{
+    background-color: var(--primary);
+}
+.name-head{
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--style-font);
+    cursor: pointer;
+    font-size: 40px;
+}
+.name-head:hover{
+    color: var(--main-color);
+}
+
+.footer {
+    margin-top: -110px;
+    padding-top: 180px;
+}
+
+.btn-icons {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border: 1px solid white;
+    border-radius: 35px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.btn-icons:hover {
+    background-color: var(--primary);
+}
+
+.footer .btn-links {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.btn-links::before {
+    position: relative;
+    content: ">";
+    font-weight: 900;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.btn-links:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 2px solid rgba(256, 256, 256, 0.1);
+}
+
+.copyright a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    color: var(--white);
+}
+
+.footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+
+
+
+
+

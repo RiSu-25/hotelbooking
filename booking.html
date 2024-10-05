@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Villa - A Best Way To Book Online</title>
+    <link rel="icon" href="./Images/favicon.png" type="image/x-icon">
+
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./CSS/booking.css">
+
+    <!--Font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <!--Flaticon Link-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+</head>
+<body>
+     <!--Navbar Section-->
+     <section>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-hotel"></i>Royal Villa 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./room.html">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!---About Header-->
+    <section class="Booking">
+        <div class="container-fluid">
+            <div class="container-fluid my-5 py-5 banner">
+                <h2 class="head-text text-center text-white text-uppercase">Booking Form</h2>
+            </div>    
+        </div>
+    </section>
+
+    <!--Bookinf Form Section-->
+    <section class="Booking-Form">
+        <div class="container">
+            <form id="bookingForm">
+                <div class="card mt-5 p-5">
+                    <h2 class="book-head text-center mb-4">Hotel Booking Form</h2>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fi fi-rs-user"></i>
+                                </div>
+                                <input type="text" id="fname" class="form-control" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fi fi-rs-user"></i>
+                                </div>
+                                <input type="text" id="lname" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fi fi-rs-at"></i>
+                                </div>
+                                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fi fi-rs-check-in-calendar"></i>
+                                </div>
+                                <input type="date" id="checkin" class="form-control" placeholder="Check In" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fi fi-rs-check-out-calendar"></i>
+                                </div>
+                                <input type="date" id="checkout" class="form-control" placeholder="Check Out" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fi fi-rs-hotel"></i>
+                                </div>
+                                <select class="form-select" id="roomType">
+                                    <option selected>Room Type</option>
+                                    <option value="Standard Room">Standard Room</option>
+                                    <option value="Delux Room">Delux Room</option>
+                                    <option value="Royal Suite">Royal Suite Room</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fi fi-rs-expense"></i>
+                                </div>
+                                <select class="form-select" id="payment">
+                                    <option selected>Payment Option</option>
+                                    <option value="Credit Card">Credit Card</option>
+                                    <option value="Paypal">PayPal</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="room-rate" id="roomRate"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn-btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</button>
+                        </div>
+                    </div>
+                    <!--Booking Data-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title" id="exampleModalLabel">Booking Confirmed</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="bookingData"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!---Footer Section-->
+    <section class="Footer">
+        <div class="container-fluid bg-dark text-light footer">
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; 2024 <a class="heading" href="#">Royal Villa </a>, All Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    
+    <script src="./JS/booking.js"></script>
+</body>
+</html>

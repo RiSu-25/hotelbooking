@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,36 +17,41 @@
     --style-font: "Pacifico", cursive;
 }
 
-body{
+body {
     font-family: "Roboto Slab", serif;
 }
 
 
 /*------Navbar------*/
-.navbar{
+.navbar {
     background-color: rgba(189, 238, 246, 0.996);
-  }
-.navbar-brand{
+}
+
+.navbar-brand {
     color: var(--main-color);
     font-weight: 600;
     font-family: var(--style-font);
     margin-left: 22px;
 }
-.collapse{
+
+.collapse {
     padding: 10px;
     justify-content: end;
 }
-.nav-item .nav-link.active{
+
+.nav-item .nav-link.active {
     color: var(--main-color);
     font-size: 20px;
     font-weight: 600;
 }
-.nav-item .nav-link.active:hover{
+
+.nav-item .nav-link.active:hover {
     color: var(--primary);
 }
 
+
 /*----Service Header----*/
-.banner{
+.banner {
     background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../Images/banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -54,34 +59,40 @@ body{
     height: 300px;
 }
 
-.head-text{
+.head-text {
     font-size: 50px;
     margin-top: 70px;
     font-weight: 600;
 }
 
+
 /*-----About section-------*/
-.title span{
+.title span {
     color: var(--main-color);
     font-weight: 600;
     font-family: var(--header-font);
 }
-.para b i{
+
+.para b i {
     color: var(--main-color);
     font-size: 20px;
 }
-.icons{
+
+.icons {
     color: var(--main-color);
 }
-.num-text{
+
+.num-text {
     color: var(--primary);
     font-weight: 600;
 }
-.name-text{
+
+.name-text {
     color: var(--main-color);
     font-weight: 600;
 }
-.btn-main{
+
+.btn-main {
     background-color: var(--primary);
     border: none;
     border-radius: 20px;
@@ -91,47 +102,141 @@ body{
     transition: 0.5s;
     text-decoration: none;
 }
-.btn-main:hover{
+
+.btn-main:hover {
     background-color: var(--main-color);
 }
 
-.head-text{
+.head-text {
     font-size: 55px;
     color: var(--main-color);
     font-weight: 600;
     margin-bottom: 30px;
 }
-.para{
+
+.para {
     font-size: 18px;
     color: var(--primary);
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 520px;
     margin-top: 20px;
 }
+
 
 /*-----Footer------*/
 .copyright {
     padding: 25px 0;
     font-size: 15px;
     border-top: 2px solid rgba(256, 256, 256, 0.1);
-  }
-  
-  .copyright a {
+}
+
+.copyright a {
     color: #fea116;
     text-decoration: none;
-  }
-  
-  .footer-menu a {
+}
+
+.footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .3);
     color: white;
-  }
-  
-  .footer-menu a:last-child {
+}
+
+.footer-menu a:last-child {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    /* Navbar adjustments */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .collapse {
+        padding: 0;
+    }
+
+    .nav-item .nav-link.active {
+        font-size: 18px;
+    }
+
+    /* Banner Text adjustments */
+    .head-text {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    /* About Section */
+    .title span {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    /* Button adjustments */
+    .btn-main {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Carousel Image adjustments */
+    .carousel-item img {
+        height: 350px;
+    }
+
+    /* Footer adjustments */
+    .footer-menu {
+        text-align: center;
+    }
+
+    .footer-menu a {
+        margin: 5px 0;
+        padding: 5px 0;
+        border-right: none;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens (smartphones) */
+    .head-text {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .btn-main {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .title span {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+}

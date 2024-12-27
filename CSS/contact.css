@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,47 +18,50 @@
     --style-font: "Pacifico", cursive;
 }
 
-body{
+body {
     font-family: "Roboto Slab", serif;
 }
 
-
 /*------Navbar------*/
-.navbar{
+.navbar {
     background-color: rgba(189, 238, 246, 0.996);
-  }
-.navbar-brand{
+}
+
+.navbar-brand {
     color: var(--main-color);
     font-weight: 600;
     font-family: var(--style-font);
     margin-left: 22px;
 }
-.collapse{
+
+.collapse {
     padding: 10px;
     justify-content: end;
 }
-.nav-item .nav-link.active{
+
+.nav-item .nav-link.active {
     color: var(--main-color);
     font-size: 20px;
     font-weight: 600;
 }
-.nav-item .nav-link.active:hover{
+
+.nav-item .nav-link.active:hover {
     color: var(--primary);
 }
 
 /*----Contact Header----*/
-.banner{
-  background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../Images/Rooms/banner.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
+.banner {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../Images/Rooms/banner.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
 }
 
-.head-text{
-  font-size: 50px;
-  margin-top: 70px;
-  font-weight: 600;
+.head-text {
+    font-size: 50px;
+    margin-top: 70px;
+    font-weight: 600;
 }
 
 /*-----Contact Us-----*/
@@ -72,62 +75,65 @@ body{
 }
 
 .contact-name {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .contact-name h5 {
-  font-size: 22px;
-  color: #20247b;
-  margin-bottom: 5px;
-  font-weight: 600;
+    font-size: 22px;
+    color: #20247b;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
+
 .contact-name p {
-  font-size: 18px;
-  margin: 0;
+    font-size: 18px;
+    margin: 0;
 }
 
 .social-share a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  text-align: center;
-  margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 10px;
 }
+
 .social-share .youtube {
-  box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
-  background-color: #ea4c89;
+    box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
+    background-color: #ea4c89;
 }
+
 .social-share .twitter, .social-share .facebook {
-  box-shadow: 0 8px 30px -4px rgba(0, 103, 255, 0.5);
-  background-color: #0067ff;
+    box-shadow: 0 8px 30px -4px rgba(0, 103, 255, 0.5);
+    background-color: #0067ff;
 }
+
 .social-share .linkedin {
-  box-shadow: 0 8px 30px -4px rgba(1, 119, 172, 0.5);
-  background-color: #0177ac;
+    box-shadow: 0 8px 30px -4px rgba(1, 119, 172, 0.5);
+    background-color: #0177ac;
 }
 
 .contact-form .form-control {
-  border: none;
-  border-bottom: 1px solid #20247b;
-  background: transparent;
-  border-radius: 0;
-  padding-left: 0;
-  box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid #20247b;
+    background: transparent;
+    border-radius: 0;
+    padding-left: 0;
+    box-shadow: none !important;
 }
+
 .contact-form .form-control:focus {
-  border-bottom: 1px solid #fc5356;
+    border-bottom: 1px solid #fc5356;
 }
+
 .contact-form .form-control.invalid {
-  border-bottom: 1px solid #ff0000;
+    border-bottom: 1px solid #ff0000;
 }
+
 .contact-form .send {
-  margin-top: 20px;
-}
-@media (max-width: 767px) {
-  .contact-form .send {
-    margin-bottom: 20px;
-  }
+    margin-top: 20px;
 }
 
 .section-title h2 {
@@ -138,12 +144,11 @@ body{
     border-left: 5px solid #fc5356;
     padding-left: 15px;
 }
+
 .section-title {
     padding-bottom: 45px;
 }
-.contact-form .send {
-    margin-top: 20px;
-}
+
 .px-btn {
     padding: 0 50px 0 20px;
     line-height: 60px;
@@ -153,6 +158,7 @@ body{
     background: none;
     border: none;
 }
+
 .px-btn:before {
     content: "";
     position: absolute;
@@ -170,6 +176,7 @@ body{
     width: 60px;
     height: 60px;
 }
+
 .px-btn .arrow {
     width: 13px;
     height: 2px;
@@ -181,6 +188,7 @@ body{
     margin: auto;
     right: 25px;
 }
+
 .px-btn .arrow:after {
     width: 8px;
     height: 8px;
@@ -198,29 +206,107 @@ body{
     transform: rotate(45deg);
 }
 
-
 /*-----Footer------*/
 .copyright {
-  padding: 25px 0;
-  font-size: 15px;
-  border-top: 2px solid rgba(256, 256, 256, 0.1);
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 2px solid rgba(256, 256, 256, 0.1);
 }
 
 .copyright a {
-  color: #fea116;
-  text-decoration: none;
+    color: #fea116;
+    text-decoration: none;
 }
 
 .footer-menu a {
-  margin-right: 15px;
-  padding-right: 15px;
-  border-right: 1px solid rgba(255, 255, 255, .3);
-  color: white;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    color: white;
 }
 
 .footer-menu a:last-child {
-  margin-right: 0;
-  padding-right: 0;
-  border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    /* Adjust Navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .collapse {
+        padding: 0;
+    }
+
+    .nav-item .nav-link.active {
+        font-size: 18px;
+    }
+
+    /* Banner Text */
+    .head-text {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    /* Contact Section */
+    .section {
+        padding: 50px 20px;
+    }
+
+    .contact-name h5 {
+        font-size: 20px;
+    }
+
+    .contact-name p {
+        font-size: 16px;
+    }
+
+    .social-share a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .contact-form .form-control {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .contact-form .send {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    .px-btn {
+        font-size: 16px;
+        padding: 0 30px 0 10px;
+    }
+
+    .footer-menu {
+        text-align: center;
+    }
+
+    .footer-menu a {
+        margin: 5px 0;
+        padding: 5px 0;
+        border-right: none;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}

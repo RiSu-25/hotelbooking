@@ -22,11 +22,10 @@ body{
     font-family: "Roboto Slab", serif;
 }
 
-
 /*------Navbar------*/
 .navbar{
     background-color: rgba(189, 238, 246, 0.996);
-  }
+}
 .navbar-brand{
     color: var(--main-color);
     font-weight: 600;
@@ -114,23 +113,143 @@ body{
     padding: 25px 0;
     font-size: 15px;
     border-top: 2px solid rgba(256, 256, 256, 0.1);
-  }
-  
-  .copyright a {
+}
+.copyright a {
     color: #fea116;
     text-decoration: none;
-  }
-  
-  .footer-menu a {
+}
+.footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .3);
     color: white;
-  }
-  
-  .footer-menu a:last-child {
+}
+.footer-menu a:last-child {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-  }
-  
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .head-text {
+        font-size: 40px;
+    }
+
+    .main-text {
+        font-size: 45px;
+    }
+
+    .para-text {
+        font-size: 14px;
+    }
+
+    .gallery img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .head-text {
+        font-size: 35px;
+    }
+
+    .main-text {
+        font-size: 40px;
+    }
+
+    .single-features-item {
+        margin-bottom: 40px;
+    }
+
+    .single-features-item i {
+        font-size: 30px;
+    }
+
+    .single-features-item h4 {
+        font-size: 22px;
+    }
+
+    .single-features-item p {
+        font-size: 14px;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .head-text {
+        font-size: 30px;
+    }
+
+    .main-text {
+        font-size: 35px;
+    }
+
+    .para-text {
+        font-size: 13px;
+    }
+
+    .gallery img {
+        height: 150px;
+    }
+
+    .single-features-item {
+        margin-bottom: 30px;
+    }
+
+    .footer-menu a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .head-text {
+        font-size: 25px;
+    }
+
+    .main-text {
+        font-size: 30px;
+    }
+
+    .para-text {
+        font-size: 12px;
+    }
+
+    .gallery img {
+        height: 120px;
+    }
+
+    .single-features-item {
+        margin-bottom: 25px;
+    }
+
+    .footer-menu a {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}

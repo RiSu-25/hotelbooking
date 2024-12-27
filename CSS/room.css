@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,36 +18,39 @@
     --style-font: "Pacifico", cursive;
 }
 
-body{
+body {
     font-family: "Roboto Slab", serif;
 }
 
-
 /*------Navbar------*/
-.navbar{
+.navbar {
     background-color: rgba(189, 238, 246, 0.996);
-  }
-.navbar-brand{
+}
+
+.navbar-brand {
     color: var(--main-color);
     font-weight: 600;
     font-family: var(--style-font);
     margin-left: 22px;
 }
-.collapse{
+
+.collapse {
     padding: 10px;
     justify-content: end;
 }
-.nav-item .nav-link.active{
+
+.nav-item .nav-link.active {
     color: var(--main-color);
     font-size: 20px;
     font-weight: 600;
 }
-.nav-item .nav-link.active:hover{
+
+.nav-item .nav-link.active:hover {
     color: var(--primary);
 }
 
-/*----Rooom Header-----*/
-.banner{
+/*----Room Header-----*/
+.banner {
     background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../Images/Rooms/banner.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -55,37 +58,40 @@ body{
     height: 300px;
 }
 
-.head-text{
+.head-text {
     font-size: 50px;
     margin-top: 70px;
     font-weight: 600;
 }
 
 /*----Room section------*/
-.Room-section{
+.Room-section {
     padding-bottom: 0;
 }
 
-.room-page-item{
+.room-page-item {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 100px;
 }
 
-.room-page-item .room-pic .single-room img{
+.room-page-item .room-pic .single-room img {
     height: 350px;
     padding: 10px;
 }
-.room-text{
+
+.room-text {
     padding-top: 33px;
     padding-right: 30px;
     padding-bottom: 34px;
 }
-.room-title{
+
+.room-title {
     overflow: hidden;
     margin-bottom: 18px;
     padding-right: 40px;
 }
-.room-title h2{
+
+.room-title h2 {
     float: left;
     color: var(--main-color);
     font-size: 35px;
@@ -93,10 +99,11 @@ body{
 }
 
 .room-price {
-	float: right;
-	position: relative;
+    float: right;
+    position: relative;
 }
-.room-price span{
+
+.room-price span {
     position: absolute;
     left: -40px;
     bottom: 7px;
@@ -106,7 +113,8 @@ body{
     line-height: 14px;
     color: var(--main-color);
 }
-.room-price sub{
+
+.room-price sub {
     position: absolute;
     right: -37px;
     bottom: 13px;
@@ -115,54 +123,59 @@ body{
     font-weight: 300;
 }
 
-.room-desc{
+.room-desc {
     margin-bottom: 20px;
 }
-.room-desc p{
+
+.room-desc p {
     font-size: 20px;
     color: black;
     line-height: 32px;
     letter-spacing: 0.2px;
 }
 
-.room-features{
+.room-features {
     overflow: hidden;
     margin-bottom: 10px;
 }
-.room-info{
+
+.room-info {
     float: left;
     text-align: center;
     margin-right: 38px;
 }
-.room-info.last{
+
+.room-info.last {
     margin-right: 0;
 }
-.room-info i{
+
+.room-info i {
     display: block;
     color: var(--icon-color);
     margin-bottom: 8px;
     font-size: 30px;
 }
-.room-info span{
+
+.room-info span {
     display: block;
     font-size: 14px;
     font-weight: 600;
     color: var(--main-color);
 }
 
-.btn-btn{
+.btn-btn {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-	font-size: 15px;
-	font-weight: 700;
-	padding: 15px 0;
-	padding-left: 34px;
-	padding-right: 34px;
-	color: black;
-	text-transform: uppercase;
-	border: 2px solid var(--primary);
-	position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 0;
+    padding-left: 34px;
+    padding-right: 34px;
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid var(--primary);
+    position: relative;
 }
 
 /*-----Footer------*/
@@ -170,24 +183,174 @@ body{
     padding: 25px 0;
     font-size: 15px;
     border-top: 2px solid rgba(256, 256, 256, 0.1);
-  }
-  
-  .copyright a {
+}
+
+.copyright a {
     color: #fea116;
     text-decoration: none;
-  }
-  
-  .footer-menu a {
+}
+
+.footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .3);
     color: white;
-  }
-  
-  .footer-menu a:last-child {
+}
+
+.footer-menu a:last-child {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-  }
-  
-  
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .head-text {
+        font-size: 40px;
+    }
+
+    .room-title h2 {
+        font-size: 30px;
+    }
+
+    .room-price {
+        font-size: 16px;
+    }
+
+    .room-desc p {
+        font-size: 18px;
+    }
+
+    .room-info i {
+        font-size: 25px;
+    }
+
+    .room-info span {
+        font-size: 13px;
+    }
+
+    .gallery img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .head-text {
+        font-size: 35px;
+    }
+
+    .room-title h2 {
+        font-size: 28px;
+    }
+
+    .room-price {
+        font-size: 14px;
+    }
+
+    .room-desc p {
+        font-size: 16px;
+    }
+
+    .room-info i {
+        font-size: 22px;
+    }
+
+    .room-info span {
+        font-size: 12px;
+    }
+
+    .gallery img {
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .head-text {
+        font-size: 30px;
+    }
+
+    .room-title h2 {
+        font-size: 24px;
+    }
+
+    .room-price {
+        font-size: 12px;
+    }
+
+    .room-desc p {
+        font-size: 14px;
+    }
+
+    .room-info i {
+        font-size: 20px;
+    }
+
+    .room-info span {
+        font-size: 11px;
+    }
+
+    .gallery img {
+        height: 200px;
+    }
+
+    .footer-menu a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .head-text {
+        font-size: 25px;
+    }
+
+    .room-title h2 {
+        font-size: 20px;
+    }
+
+    .room-price {
+        font-size: 10px;
+    }
+
+    .room-desc p {
+        font-size: 13px;
+    }
+
+    .room-info i {
+        font-size: 18px;
+    }
+
+    .room-info span {
+        font-size: 10px;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+
+    .footer-menu a {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}

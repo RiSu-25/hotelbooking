@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,11 +17,12 @@
     --style-font: "Pacifico", cursive;
 }
 
-body{
+body {
     font-family: "Roboto Slab", serif;
 }
-/*-----For all section tile we use this------
---------Section Title Code-------*/
+
+/*-----For all section tile we use this------*/
+/*--------Section Title Code-------*/
 .section-title {
     position: relative;
     display: inline-block;
@@ -56,30 +57,34 @@ body{
 }
 
 /*------Navbar------*/
-.navbar{
+.navbar {
     background-color: rgba(189, 238, 246, 0.996);
-  }
-.navbar-brand{
+}
+
+.navbar-brand {
     color: var(--main-color);
     font-weight: 600;
     font-family: var(--style-font);
     margin-left: 22px;
 }
-.collapse{
+
+.collapse {
     padding: 10px;
     justify-content: end;
 }
-.nav-item .nav-link.active{
+
+.nav-item .nav-link.active {
     color: var(--main-color);
     font-size: 20px;
     font-weight: 600;
 }
-.nav-item .nav-link.active:hover{
+
+.nav-item .nav-link.active:hover {
     color: var(--primary);
 }
 
 /*-----Banner Section------*/
-.carousel-caption{
+.carousel-caption {
     top: 0;
     left: 0;
     right: 0;
@@ -87,22 +92,24 @@ body{
     background: rgba(15, 23, 43, .7);
     z-index: 1;
 }
-.carousel-item img{
+
+.carousel-item img {
     height: 780px;
 }
 
-.section-title i{
+.section-title i {
     color: var(--primary);
     font-size: 12px;
 }
-.text{
+
+.text {
     font-size: 55px;
     font-weight: 600;
     font-family: var(--header-font);
 }
 
 /*-----All Button CSS-------*/
-.btn-main{
+.btn-main {
     background-color: var(--primary);
     border: none;
     margin-top: 23px;
@@ -113,10 +120,10 @@ body{
     transition: 0.5s;
     text-decoration: none;
 }
-.btn-main:hover{
+
+.btn-main:hover {
     background-color: var(--main-color);
 }
-
 
 /*-----Booking Section------*/
 .booking {
@@ -124,11 +131,12 @@ body{
     margin-top: -70px;
     z-index: 1;
 }
-.bg-white{
+
+.bg-white {
     border-radius: 20px;
 }
 
-label{
+label {
     color: var(--main-color);
     font-weight: 600;
     font-size: 15px;
@@ -136,57 +144,61 @@ label{
 }
 
 /*-----About Section------*/
-
 /*---tile span is used for all heading---*/
-.title span{
+.title span {
     color: var(--main-color);
     font-weight: 600;
     font-family: var(--header-font);
 }
-.para b i{
+
+.para b i {
     color: var(--main-color);
     font-size: 20px;
 }
-.icons{
+
+.icons {
     color: var(--main-color);
 }
-.num-text{
+
+.num-text {
     color: var(--primary);
     font-weight: 600;
 }
-.name-text{
+
+.name-text {
     color: var(--main-color);
     font-weight: 600;
 }
 
-
 /*-----Room Section-----*/
-.card{
+.card {
     width: 350px;
     height: 420px;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card img{
+.card img {
     width: 350px;
     height: 250px;
     padding: 10px;
     border-radius: 25px;
 }
-.card-title{
+
+.card-title {
     color: var(--main-color);
     font-weight: 600;
     text-align: center;
     font-size: 30px;
 }
-.card-text{
+
+.card-text {
     color: var(--primary);
     text-align: center;
     font-weight: 550;
 }
 
-.btn-btn{
+.btn-btn {
     background-color: var(--primary);
     text-decoration: none;
     color: var(--white);
@@ -225,21 +237,21 @@ label{
     transition: .5s;
 }
 
-.service-item:hover h5{
+.service-item:hover h5 {
     color: var(--white);
 }
 
-.heading{
+.heading {
     color: var(--main-color);
     font-weight: 600;
     text-decoration: underline;
 }
-.text-body{
+
+.text-body {
     text-align: center;
     font-size: 11px;
     font-weight: 600;
 }
-
 
 /*---------Testimonial Section------*/
 .testimonial {
@@ -249,7 +261,7 @@ label{
     background-size: cover;
 }
 
-.owl-carousel{
+.owl-carousel {
     display: flex;
     gap: 20px;
 }
@@ -275,17 +287,19 @@ label{
 }
 
 /*------Footer Section------*/
-.head{
+.head {
     background-color: var(--primary);
 }
-.name-head{
+
+.name-head {
     color: var(--white);
     text-decoration: none;
     font-family: var(--style-font);
     cursor: pointer;
     font-size: 40px;
 }
-.name-head:hover{
+
+.name-head:hover {
     color: var(--main-color);
 }
 
@@ -362,8 +376,133 @@ label{
     border-right: none;
 }
 
+/*-----Media Queries for responsiveness------*/
 
+@media (max-width: 1200px) {
+    .card {
+        width: 320px;
+        height: 380px;
+    }
 
+    .carousel-item img {
+        height: 650px;
+    }
 
+    .btn-main {
+        font-size: 16px;
+    }
 
+    .section-title {
+        font-size: 13px;
+    }
+}
 
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .carousel-item img {
+        height: 600px;
+    }
+
+    .card {
+        width: 280px;
+        height: 350px;
+    }
+
+    .btn-main {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 40px;
+    }
+
+    .service-item {
+        height: 280px;
+        padding: 20px;
+    }
+
+    .testimonial-carousel {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        font-size: 22px;
+        margin-left: 0;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .card {
+        width: 100%;
+        height: 300px;
+    }
+
+    .section-title {
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+
+    .service-item {
+        height: 250px;
+        padding: 15px;
+    }
+
+    .footer .footer-menu {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-menu a {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .card {
+        width: 100%;
+        height: 280px;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .service-item {
+        height: 220px;
+        padding: 10px;
+    }
+
+    .footer {
+        padding-top: 100px;
+    }
+
+    .footer-menu a {
+        margin-right: 0;
+        border-right: none;
+    }
+}
